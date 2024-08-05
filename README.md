@@ -22,17 +22,18 @@ Create a Flutter app to showcase WebSocket connectivity and real-time data displ
    ```sh
    git clone https://github.com/Brijesh-26/test_trade_assignment_submission.git
 
-2. Navigate to project directory:
-  ```sh
-  cd flutter-websocket-client
+2. Navigate to the directory:
+   ```sh
+   cd test_trade_assignment_submission
 
-3. Install dependencies
-  ```sh
-  flutter pub get
+3. Install dependencies:
+   ```sh
+   flutter pub get
 
-4. Run the app
-  ```sh
-  flutter run
+4. Run the app:
+   ```sh
+   flutter run
+
 
 
 
