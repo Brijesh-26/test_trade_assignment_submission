@@ -6,7 +6,10 @@ class TradeDataProvider with ChangeNotifier {
   String get latestPrice => _latestPrice;
 
   void updatePrice(String newPrice) {
-    _latestPrice = newPrice;
-    notifyListeners();
+    // if newPrice and prevPrice are same no need to update the UI
+    if (_latestPrice != newPrice) {
+      _latestPrice = newPrice;
+      notifyListeners();
+    }
   }
 }

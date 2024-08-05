@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import '../services/websocket_service.dart';
-import '../models/trade_data_provider.dart';
+import 'package:trade_test/src/services/websocket_service.dart';
+import 'package:trade_test/src/models/trade_data_provider.dart';
+import 'package:trade_test/config/constants.dart';
 
 class TradeScreen extends StatefulWidget {
   @override
-  _TradeScreenState createState() => _TradeScreenState();
+  TradeScreenState createState() => TradeScreenState();
 }
 
-class _TradeScreenState extends State<TradeScreen> {
+class TradeScreenState extends State<TradeScreen> {
   late WebSocketService _webSocketService;
 
   @override
   void initState() {
     super.initState();
-    _webSocketService = WebSocketService('wss://stream.binance.com:9443/ws/btcusdt@trade');
+    _webSocketService = WebSocketService(websocketUrl);
     _webSocketService.stream.listen((Map<String, dynamic> tradeData) {
       final provider = Provider.of<TradeDataProvider>(context, listen: false);
       provider.updatePrice(tradeData['p'] ?? 'No price data');
@@ -32,7 +33,7 @@ class _TradeScreenState extends State<TradeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Trade Data')),
+      appBar: AppBar(title: const Text('Demo Data')),
       body: Center(
         child: Consumer<TradeDataProvider>(
           builder: (context, provider, child) {
