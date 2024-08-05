@@ -1,5 +1,5 @@
 ## Flutter WebSocket Client
-This Flutter app demonstrates WebSocket connectivity and real-time data handling. The WebSocket used is from Binance, chosen for its reliable data streaming.
+This Flutter app demonstrates WebSocket connectivity and real-time data handling. The WebSocket used is from Binance.
 
 ### Objective
 Create a Flutter app to showcase WebSocket connectivity and real-time data display.
@@ -20,7 +20,7 @@ Create a Flutter app to showcase WebSocket connectivity and real-time data displ
 
 1. Clone the repository:
    ```sh
-   git clone https://github.com/your-username/flutter-websocket-client.git
+   git clone https://github.com/Brijesh-26/test_trade_assignment_submission.git
 
 2. Navigate to project directory:
   ```sh
