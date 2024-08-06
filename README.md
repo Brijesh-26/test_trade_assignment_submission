@@ -1,8 +1,8 @@
 ## Flutter WebSocket Client
-This Flutter app demonstrates WebSocket connectivity and real-time data handling. The WebSocket used is from Binance.
+This project is a Flutter application that connects to a WebSocket to display real-time data.
 
 ### Objective
-Create a Flutter app to showcase WebSocket connectivity and real-time data display.
+The objective of this project is to build a Flutter app that connects to a WebSocket, listens for data streams, and updates the UI with the latest received data in real-time.
 
 ### Approach
 - **Initial Setup**: Configured Flutter with necessary dependencies.
